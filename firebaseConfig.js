@@ -1,24 +1,8 @@
-<<<<<<< HEAD
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore"; // Import getFirestore to initialize Firestore
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-=======
-// Import the functions you need from the Firebase SDKs, using CDN URLs for browser direct module loading
-// Make sure this version matches the latest stable version or the one you intend to use.
-// You can check https://firebase.google.com/docs/web/setup#available-libraries for the latest modular CDN URLs.
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-// Your web app's Firebase configuration
-// IMPORTANT: REPLACE ALL "YOUR_..." PLACEHOLDERS WITH YOUR ACTUAL VALUES
-// You can find these in the Firebase Console: Project settings -> General -> Your apps -> Web app -> Config
->>>>>>> c24e9345ed882b51ff5d20fd80f57562c24645a2
 const firebaseConfig = {
   apiKey: "AIzaSyA9g2cmq0mQx517NBcQMLenbTwtsg9l8u0",
   authDomain: "ecommerce-web-1-ae670.firebaseapp.com",
@@ -29,7 +13,7 @@ const firebaseConfig = {
   measurementId: "G-4LY6ZBP9DF"
 };
 
-<<<<<<< HEAD
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
@@ -38,14 +22,4 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app); // Get the Firestore instance
 
 export { db }; // Export the Firestore database instance
-=======
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-// Initialize Firebase services you want to use
-const db = getFirestore(app);
-
-// Export the initialized Firebase app and services
-export { app, db };
->>>>>>> c24e9345ed882b51ff5d20fd80f57562c24645a2
